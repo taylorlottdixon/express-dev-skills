@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='stylesheets/style.css' />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
-    <title>Express Dev Skills</title>
-</head>
-<body>
-    <h3><%= skill.skill %></h3>
-    
-</body>
-</html>
+<%- include('../partials/header') %>
+
+<h3><%= skill.skill %></h3>
+<h5>Description</h5>
+<p></p>
+<a href="/skills/<%= skill.id %>/edit">Edit Details</a>
+
+<%- include('../partials/footer') %>

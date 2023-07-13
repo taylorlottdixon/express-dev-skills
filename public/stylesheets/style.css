@@ -1,45 +1,126 @@
-* {
-  font-family: 'Maven Pro', sans-serif;
-  font-family: 'Titillium Web', sans-serif;
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: #00B7FF;
+}
 body {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: 'Maven Pro', sans-serif;
-  font-family: 'Titillium Web', sans-serif;
-  background: linear-gradient(to right, #654ea3, #eaafc8);
-  justify-content: center;
-  min-width: 300px;
-  text-align: center;
-}
-
-header {
   justify-content: center;
   align-items: center;
-  min-width: 300px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color:rgb(34, 34, 34);
+  font-family: 'Libre Franklin', sans-serif;
+  background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
 }
 
-h1 {
-  font-size: 5vh;
+h1, h3, footer {
+  display: flex;
+  justify-content: center;
 }
 
-p {
-  font-size: 2.5vh;
-}
-
-ul {
-  padding-left: 0;
-}
-
-ul li {
-  list-style-type: none;
-  list-style-position: inside;
+nav {
+  display:flex;
+  width: 100%;
+  height: 4vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  align-items: center;
+  justify-content: center;
+  column-gap: 2vh;
 }
 
 a {
   color: white;
-  font-size: 2.5vh;
+  text-decoration: none;
+  font-style: normal;
+}
+
+a:hover {
+  color:rgba(254, 218, 255, 0.856);
+}
+
+.delete-form {
+  display: inline-block;
+}
+	
+.delete-form button {
+  background-color: transparent;
+  border: none;
+}
+
+.material-symbols-outlined {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.delete-form button:hover {
+  color: white;
+}
+	
+.newItem {
+  margin-top: 4vh;
+  margin-left: 3vh;
+}
+
+ul {
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  margin-top: 0vh;
+  font-style: italic;
+  font-size: 2vh;
+}
+
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 3vh;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+footer {
+  margin-top: auto;
+}
+
+form {
+  margin-top: 3vh;
 }
